@@ -1,0 +1,35 @@
+<ion-content _aio-3FBB3CAA>
+    <div _aio-35FCE3FF #j_21>
+        <form #form="ngForm" #form_el (ngSubmit)="formNgSubmit__j_22($event, currentItem)">
+            <ion-img #j_23 src="assets/images/Cleaning_Unlimited_Logo_JPG.jpg" alt="Image error">
+            </ion-img>
+            <ion-item _aio-118D48A6 #j_24__ion4Item>
+                <ion-label _aio-118D48A6 #j_24__ion4Label color="primary" position="stacked">
+                    Username
+                </ion-label>
+                <ion-icon _aio-118D48A6 #j_24__icon name="person" slot="end">
+                </ion-icon>
+                <ion-input _aio-118D48A6 #j_24="ngModel" #j_24_el name="Input2" placeholder="Username"
+                type="email" required="true" aioControlValidation="email" aioValidationShowMessage="true"
+                [(ngModel)]="email">
+                </ion-input>
+            </ion-item>
+            <ion-item _aio-99E73D03 #j_25__ion4Item>
+                <ion-label _aio-99E73D03 #j_25__ion4Label color="primary" position="stacked">
+                    Password
+                </ion-label>
+                <ion-icon _aio-99E73D03 #j_25__icon name="eye" slot="end">
+                </ion-icon>
+                <ion-input _aio-99E73D03 #j_25="ngModel" #j_25_el [ngModel] name="Input1" placeholder="Password"
+                type="password" required="true" aioControlValidation="strongPassword" aioValidationShowMessage="true">
+                </ion-input>
+            </ion-item>
+            <div _aio-B95B3FCB #j_26>
+            </div>
+            <ion-button _aio-ADA948C6 #j_27 expand="block" size="large" (click)="loginbuttonClick__j_27($event, currentItem)"
+            [disabled]="__getMapping(currentItem, 'j_27__disabled', form.invalid, undefined, true)">
+                Login
+            </ion-button>
+        </form>
+    </div>
+</ion-content>

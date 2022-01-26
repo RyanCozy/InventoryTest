@@ -1,0 +1,31 @@
+
+.aioHidden {
+	display: none!important;
+}
+.aio-validation-error {
+	color: var(--ion-color-danger);
+	padding: 5px 15px;
+}
+/* Fix Ionic 5 issues */
+ion-item ion-reorder:not([slot]) {
+	z-index: 100;
+}
+/*
+* Appery.io component.
+*/
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.img-rounded {
+	border-radius: 6px;
+}
+/* [ETST-42825 Ionic Input Margin Bug] Temporary fix for ion-input width */
+:not(ion-item) > ion-input.sc-ion-input-ios-h,
+:not(ion-item) > ion-input.sc-ion-input-md-h {
+	width: auto;
+}

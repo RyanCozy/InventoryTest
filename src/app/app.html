@@ -1,0 +1,45 @@
+<ion-app>
+    <ion-menu contentId="main-content" side="start">
+        <ion-header>
+            <ion-toolbar #j_14>
+                <ion-title #j_15>
+                    Menu
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list #j_3 (click)="menulistClick__j_3($event, currentItem)">
+                <ion-item #j_4 [routerLink]="['/home']">
+                    <ion-icon #j_5 name="home" size="large" slot="start">
+                    </ion-icon>
+                    <ion-label #j_6>
+                        Home
+                    </ion-label>
+                </ion-item>
+                <ion-item #j_7 [routerLink]="['/profile']">
+                    <ion-icon #j_8 name="person" size="large" slot="start">
+                    </ion-icon>
+                    <ion-label #j_9>
+                        Profile
+                    </ion-label>
+                </ion-item>
+                <ion-item #j_10 [routerLink]="['/login']">
+                    <ion-icon #j_11 name="alert-circle" size="large" slot="start">
+                    </ion-icon>
+                    <ion-label #j_12>
+                        Info
+                    </ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+        <ion-footer>
+            <ion-button _aio-12C3D339 #j_17 expand="block" (click)="logout_btnClick__j_17($event, currentItem)">
+                <ion-icon #j_17__icon name="log-in-outline">
+                </ion-icon>
+                Logout
+            </ion-button>
+        </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="main-content">
+    </ion-router-outlet>
+</ion-app>
